@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%; /*this tells elements that they can never be bigger than their parents*/
+    border: 1px solid gray;
+}
+html{
+    font-size: 62.5%;
+    text-align: ;
+}
+body{
+    font-size: 1.8rem;
+    font-family: font-family: 'IM Fell Great Primer', serif;
+    line-height:2; 
+}
+button, a{
+    font-family: 'Lustria', serif;
+}
+/*beginning of button animation*/ 
+button{
+    background:#1ABC9C;
+    background: linear-gradient(0deg, #1ABC9C 0%, #1ABC9C 100%);
+    color:#fff;
+    font-size:1.8rem;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    transition: all 0.3s ease;
+}
+  span.btn{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  button:before,
+  button:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #1ABC9C;
+    transition: all 0.3s ease;
+  }
+  button:before {
+    height: 0%;
+    width: 2px;
+  }
+  button:after {
+    width: 0%;
+    height: 2px;
+  }
+  button:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  button:hover:before {
+    height: 100%;
+  }
+  button:hover:after {
+    width: 100%;
+  }
+  button span.btn:hover{
+     color: #1ABC9C;
+  }
+  button span.btn:before,
+  button span.btn:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background:#1ABC9C;
+    transition: all 0.3s ease;
+  }
+  button span.btn:before {
+    width: 2px;
+    height: 0%;
+  }
+  button span.btn:after {
+    width: 0%;
+    height: 2px;
+  }
+  button span.btn:hover:before {
+    height: 100%;
+  }
+  button span.btn:hover:after {
+    width: 100%;
+  }
+ 
+a{
+    text-decoration: none;
+    color: #4f4f4f;
+}
+a:hover{
+    color: greenyellow;
+}
+h1, h2, h3{
+    font-family: font-family: 'Metal Mania', cursive;
+    letter: spacing 3px;
+}
+span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 3rem;
+}
+
+nav.main{
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.top{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+#about{
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+
+}
+.left{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: ;
+}
+.left, .right{
+    width: 45%;
+    
+}
+.right{
+    display:flex;
+    justify-content: center;
+}
+.right .box{
+    width: 60%;
+    padding: 4%;
+}
+.left img{
+    width: 80%;
+}
